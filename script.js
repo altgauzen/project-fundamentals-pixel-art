@@ -1,28 +1,42 @@
-/*function addClass() {
+let divColor = document.querySelectorAll('.color');
+let selectedPalette = document.getElementsByClassName('selected')[0];
+let color = window.getComputedStyle(selectedPalette, null).getPropertyValue("background-color");
+    
+  for (let index = 0; index < 4; index += 1) {
+    divColor[index].addEventListener('click', function() {
+      let selectedColor = document.querySelector('.selected');
+      selectedColor.classList.remove('selected');
+      divColor[index].classList.add('selected');
+      console.log(divColor[index]);
+    }) 
+  } 
 
+  /*
+      document.getElementsByClassName('color')[index].addEventListener('click', function() {
+        if (selectedPalette.classList.contains('selected')) {
+          event.target.classList.remove('selected');
+        } else {
+          event.target.classList.add('selected');
+        }
+      })*/
 
-}
-
-document.getElementById('color-palette').addEventListener('click', function() {
-
-})
-
-
+/*
 function paintPixel() {
   let pixel = docu
   let selectedPixel = document.querySelector('.selected')
 
-}
+}*/
+/*
 function myFunction(){
   var elem = document.getElementsByClassName('selected')[0];
   var theCSSprop = window.getComputedStyle(elem, null).getPropertyValue("background-color");
   console.log (theCSSprop);
   }
   myFunction()
-  
+  */
 
 
-*/
+
 /*
 function changeColorItem(event) {
   let allLines = document.querySelectorAll('li');
