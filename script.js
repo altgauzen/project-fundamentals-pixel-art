@@ -1,4 +1,4 @@
-function addClass() {
+/*function addClass() {
 
 
 }
@@ -22,7 +22,7 @@ function myFunction(){
   
 
 
-
+*/
 /*
 function changeColorItem(event) {
   let allLines = document.querySelectorAll('li');
