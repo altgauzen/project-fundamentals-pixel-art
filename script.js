@@ -9,7 +9,7 @@ document.getElementById('color-palette').addEventListener('click', function() {
 
 
 function paintPixel() {
-
+  let pixel = docu
   let selectedPixel = document.querySelector('.selected')
 
 }
