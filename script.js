@@ -1,15 +1,24 @@
-let divColor = document.querySelectorAll('.color');
-let selectedPalette = document.getElementsByClassName('selected')[0];
-let color = window.getComputedStyle(selectedPalette, null).getPropertyValue("background-color");
-    
-  for (let index = 0; index < 4; index += 1) {
-    divColor[index].addEventListener('click', function() {
-      let selectedColor = document.querySelector('.selected');
-      selectedColor.classList.remove('selected');
-      divColor[index].classList.add('selected');
-      console.log(divColor[index]);
-    }) 
-  } 
+let divColor = document.querySelectorAll('.color'); 
+for (let index = 0; index < divColor.length; index += 1) {
+  divColor[index].addEventListener('click', function() {
+    let selectedColor = document.querySelector('.selected');
+    selectedColor.classList.remove('selected');
+    divColor[index].classList.add('selected');
+    console.log(divColor[index]);
+  }) 
+} 
+
+let pixelBoard = document.querySelectorAll('.pixel');
+for (let indexPixel = 0; indexPixel < pixelBoard.length; indexPixel += 1) {
+  pixelBoard[indexPixel].addEventListener('click',function(event) {
+    let selectedPalette = document.getElementsByClassName('selected')[0];
+    let color = window.getComputedStyle(selectedPalette, null).getPropertyValue("background-color");
+    event.target.style.backgroundColor = color;
+    }
+  )
+}
+      
+
 
   /*
       document.getElementsByClassName('color')[index].addEventListener('click', function() {
