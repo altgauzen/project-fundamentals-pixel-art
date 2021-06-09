@@ -18,6 +18,12 @@ for (let indexPixel = 0; indexPixel < pixelBoard.length; indexPixel += 1) {
   );
 }
 
+document.getElementById('clear-board').addEventListener('click',function() {
+  const pixelBoard = document.querySelectorAll('.pixel');
+  let whiteColor = ('rgb(255, 255, 255)');
+  pixelBoard.style.backgroundColor = whiteColor;
+})
+
 /*
 function myFunction(){
   var elem = document.getElementsByClassName('selected')[0];
