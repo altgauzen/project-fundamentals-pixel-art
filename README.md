@@ -1,8 +1,20 @@
-## Termos e acordos
+# project-fundamentals-pixels-art
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
+## Meus Comentários
+
+Este foi um projeto individual feito na Trybe no Módulo de Fundamentos onde coloquei em prática a manipulação do DOM com JavaScript.
+
+Aprendí neste Projeto a: 
+ - Manipular o DOM;
+ - Manipular o Javascript.
 
 ---
+
+
+Aproveitamento: 88.89% de aprovação pelos avaliadores da Trybe.
+
+---
+
 
 ## Boas vindas ao repositório do projeto Arte com Pixels!
 
